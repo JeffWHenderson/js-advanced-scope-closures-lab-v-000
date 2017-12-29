@@ -1,7 +1,7 @@
 function produceDrivingRange(range) {
   return function(distance){
     if(range - distance > 0){
-      return true
+      return `${range - distance} blocks out of range`
     } else {
       return false
     }
