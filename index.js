@@ -2,7 +2,7 @@ function produceDrivingRange(range) {
   return function(start, stop){
     let blocks = parseInt(stop) - parseInt(start)
     if(range - blocks > 0){
-      return `${range - blocks} blocks out of range`
+      return `${Math.abs(range - blocks)} blocks out of range`
     } else {
       return `${range - blocks} blocks out of range`
     }
