@@ -1,6 +1,7 @@
 function produceDrivingRange(range) {
-  return function(distance){
-    if(range - distance > 0){
+  return function(start, stop){
+    let blocks = start - stop
+    if(range - blocks > 0){
       return `${range - distance} blocks out of range`
     } else {
       return `${range - distance} blocks out of range`
